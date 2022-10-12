@@ -6,24 +6,39 @@
     --txtcolor-secondary: #757575;
 }
 
-ul {
-    list-style: none;
-}
-
 /*body*/
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-/*header*/
-header {
-    background-color: #FFFFFF;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.section {
+    padding: 94px 0;
 }
 
 .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 15px;
+}
+/*header*/
+
+.header {
+    border-bottom: 1px solid #ECECEC;
 }
 
 .web-logo {
@@ -78,7 +93,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .header-nav {
@@ -102,8 +116,10 @@ header {
 
 /*main*/
 /*title section*/
-.section-title {
+.hero {
     background-color: var(--color-primary);
+    text-align: center;
+    padding: 200px 0;
 }
 
 .main-title {
@@ -117,9 +133,6 @@ header {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 200px;
 }
 
 .btn-requestservice {
@@ -132,21 +145,16 @@ header {
     line-height: 1.86;
     letter-spacing: 0.06em;
     color: #FFFFFF;
+    border: none;
     cursor: pointer;
     padding: 10px 32px 10px 32px;
     margin-top: 30px;
-    margin-bottom: 200px;
 }
 
 .btn-requestservice:hover,
 .btn-requestservice:focus {
     background-color: #188CE8;
 }
-
-.title-container {
-    text-align: center;
-}
-
 
 /*section under title*/
 .benefits {
@@ -155,9 +163,6 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--txtcolor-primary);
-    width: 270px;
-    margin-top: 94px;
-    margin-bottom: 0px;
 }
 
 .benefits-description {
@@ -165,9 +170,12 @@ header {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--txtcolor-secondary);
-    width: 270px;
     margin-top: 10px;
     margin-bottom: 0px;
+}
+
+.whatwe-do {
+    padding-top: 0;
 }
 
 .title-whatwe-do {
@@ -176,40 +184,31 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--txtcolor-primary);
-    margin-top: 94px;
-    margin-bottom: 0px;
 }
 
 .picsof-whatwe-do {
     display: flex;
     gap: 30px;
     margin-top: 50px;
-    padding-bottom: 94px;
-    padding-left: 0px;
-    margin-bottom: 0px;
 }
 
 .listof-benefits {
     display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-left: 0px;
     justify-content: center;
     gap: 30px;
 }
 
+.listof-benefits .list {
+    width: 270px;
+}
+
 /*our team section*/
-.section-team {
+.team {
     background-color: #F5F4FA;
 }
 
 .people-cards {
     display: flex;
-    padding-left: 0px;
-    padding-bottom: 94px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    justify-content: center;
     gap: 30px;
 }
 
@@ -219,15 +218,17 @@ header {
     border-radius: 0px 0px 4px 4px;
 }
 
-.team {
+.team-title {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--txtcolor-primary);
-    padding-top: 94px;
     margin-bottom: 50px;
-    margin-top: 0px;
+}
+
+.team-wrapper {
+    padding: 30px 0;
 }
 
 .people-names {
@@ -237,7 +238,6 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--txtcolor-primary);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -247,17 +247,12 @@ header {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--txtcolor-secondary);
-    margin-bottom: 30px;
-    margin-top: 0px;
 }
 
 /*footer*/
-footer {
+.footer {
     background-color: var(--color-primary);
-}
-
-.logo-footer {
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 .studiologo-footer {
@@ -269,29 +264,23 @@ footer {
     color: #FFFFFF;
 }
 
-.adress-line {
+.footer-adress {
     font-style: normal;
+    margin-top: 20px;
+}
+
+.adress-line {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-
-.contact-footer {
-    display: block;
-    padding-left: 0px;
-    margin-top: 9px;
-    margin-bottom: 0px;
-    padding-bottom: 60px;
+    margin-bottom: 9px;
 }
 
 .link-contact-footer {
     text-decoration: none;
-    font-style: normal;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     letter-spacing: 0.02em;
     color: var(--txtcolor-secondary);
 }
@@ -301,15 +290,11 @@ footer {
 .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 94px;
-    margin-bottom: 0px;
-    padding-left: 0px;
     gap: 8px;
 }
 
-.btn-all {
+.filter-button {
     background-color: #F5F4FA;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     font-family: inherit;
     font-weight: 500;
@@ -319,90 +304,11 @@ footer {
     color: #212121;
     cursor: pointer;
     padding: 6px 22px 6px 22px;
+    border: none;
 }
 
-.btn-all:hover,
-.btn-all:focus {
-    background-color: var(--color-brand);
-    color: #FFFFFF;
-}
-
-.btn-webs {
-    background-color: #F5F4FA;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    color: #212121;
-    cursor: pointer;
-    padding: 6px 22px 6px 22px;
-}
-
-.btn-webs:hover,
-.btn-webs:focus {
-    background-color: var(--color-brand);
-    color: #FFFFFF;
-}
-
-.btn-extras {
-    background-color: #F5F4FA;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    color: #212121;
-    cursor: pointer;
-    padding: 6px 22px 6px 22px;
-}
-
-.btn-extras:hover,
-.btn-extras:focus {
-    background-color: var(--color-brand);
-    color: #FFFFFF;
-}
-
-.btn-design {
-    background-color: #F5F4FA;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    color: #212121;
-    cursor: pointer;
-    padding: 6px 22px 6px 22px;
-}
-
-.btn-design:hover,
-.btn-design:focus {
-    background-color: var(--color-brand);
-    color: #FFFFFF;
-}
-
-.btn-marketing {
-    background-color: #F5F4FA;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
-    letter-spacing: 0.03em;
-    color: #212121;
-    cursor: pointer;
-    padding: 6px 22px 6px 22px;
-}
-
-.btn-marketing:hover,
-.btn-marketing:focus {
+.filter-button:hover,
+.filter-button:focus {
     background-color: var(--color-brand);
     color: #FFFFFF;
 }
@@ -411,16 +317,19 @@ footer {
 .project-cards {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0px;
     margin-top: 50px;
-    margin-bottom: 94px;
     gap: 30px;
 }
 
 .boxes {
     box-sizing: border-box;
     background: #FFFFFF;
+}
+
+.project-wrapper {
     border: 1px solid #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
 }
 
 .project-name {
@@ -428,8 +337,7 @@ footer {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--txtcolor-primary);
-    margin-top: 20px;
-    margin-bottom: 0px;
+
 }
 
 .project-type {
@@ -438,5 +346,4 @@ footer {
     letter-spacing: 0.03em;
     color: var(--txtcolor-secondary);
     margin-top: 4px;
-    margin-bottom: 20px;
 }
